@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +12,7 @@
         body, html {
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
         }
 
         .header-image-container {
@@ -50,14 +54,39 @@
             border-radius: 10px;
         }
 
+        /* Updated Paragraph Styling */
         p {
-            max-width: 600px;
+            max-width: 650px;
             margin: 20px auto;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
+            font-family: 'Georgia', serif; /* Elegant, classic font */
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333; /* Slightly softer color than black */
+            text-align: justify; /* Justify text for even alignment on both sides */
+            letter-spacing: 0.5px; /* Subtle spacing between letters */
+            background-color: #f9f9f9; /* Light background for contrast */
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
         }
 
+        /* Highlight key points or quotes */
+        p strong {
+            color: #1c1c1c; /* Slightly darker color for emphasis */
+            font-weight: bold;
+        }
+
+        p em {
+            font-style: italic;
+            color: #555; /* Slightly darker gray */
+        }
+
+        /* Add spacing between paragraphs */
+        p + p {
+            margin-top: 25px;
+        }
+
+        /* Add back button styles */
         .back-button-container {
             text-align: center;
             margin-top: 20px;
@@ -80,6 +109,7 @@
             background-color: #000000;
         }
 
+        /* Footer and link styles */
         footer {
             text-align: center;
             padding: 20px;
@@ -89,8 +119,33 @@
         }
 
         footer a {
-            color: white;
+            color: black;  /* Change link color to black */
             text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline; /* Optional: Add underline on hover for interaction */
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            p {
+                max-width: 90%; /* Reduce max width for smaller screens */
+                font-size: 1rem; /* Slightly smaller font size on smaller screens */
+                padding: 10px; /* Less padding on smaller screens */
+            }
+
+            .header-image-container {
+                height: 40vh;
+            }
+
+            .content-container {
+                padding: 20px;
+            }
+
+            .back-button {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -108,10 +163,10 @@
         </div>
 
         <div class="image-container">
-            <img src="images/3-4players.jpg" alt="3-4 Players Piano Level">
+            <title>alt="Intermediate Piano Level Player Playing Piano"></title> 
         </div>
 
-        <p>If you are a "Number 3" player, you should be able to play everything from the previous levels and the upcoming material with no mistakes. A "Number 3" player should be able to play the 12 minor scales one finger at a time, perform two-finger chord progressions for the 12 major scales, and play the following songs:</p>
+        <p>If you are a <strong>"Number 3"</strong> player, you should be able to play everything from the previous levels and the upcoming material with no mistakes. A "Number 3" player should be able to play the 12 minor scales one finger at a time, perform two-finger chord progressions for the 12 major scales, and play the following songs:</p>
         <ul>
             <li>Fur Elise</li>
             <li>Clair de Lune</li>
@@ -119,7 +174,7 @@
         </ul>
         <p>Mastering these skills shows that you're entering the realm of an intermediate piano player.</p>
 
-        <p>When you become a "Number 4" player, you should be able to perform the techniques described for "Number 3" but with triad chords going up and down each scale. This means being able to do it in both upward and downward single-note patterns. Additionally, you should be able to play the following pieces:</p>
+        <p>When you become a <strong>"Number 4"</strong> player, you should be able to perform the techniques described for "Number 3" but with triad chords going up and down each scale. This means being able to do it in both upward and downward single-note patterns. Additionally, you should be able to play the following pieces:</p>
         <ul>
             <li>Fantaisie-Impromptu</li>
             <li>The Nutcracker Suite (Tchaikovsky)</li>
